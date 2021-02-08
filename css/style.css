@@ -1,0 +1,782 @@
+/* 웹 포트폴리오 스타일문서 */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+a {color: inherit; text-decoration: none;}
+ul,li {list-style: none;}
+
+/*폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*font-family: 'Noto Sans KR', sans-serif;*/
+/*폰트 끝*/
+
+:root {
+    --button-hover: #fff;
+    --button-color: #aaa;
+}
+
+.hl {
+    background-color: yellow;
+    color: #000;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    color: #eee;
+    animation: flow 10s infinite alternate;
+    font-family: 'Noto Sans KR';
+}
+
+@keyframes flow {
+    0% {
+    background:
+      linear-gradient(217deg, rgba(0,0,0,1), rgba(255,0,0,0) 100%),
+      linear-gradient(127deg, rgba(2,2,2,1), rgba(0,255,0,0) 100%),
+      linear-gradient(336deg, rgba(0,0,0,1), rgba(0,0,255,0) 100%);
+    }
+    100% {
+        background:
+      linear-gradient(217deg, rgba(2,2,2,1), rgba(255,0,0,0) 100%),
+      linear-gradient(127deg, rgba(0,0,0,1), rgba(0,255,0,0) 100%),
+      linear-gradient(336deg, rgba(0,0,0,1), rgba(0,0,255,0) 100%);
+    }
+}
+
+#wrap {
+    width: 1440px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/*
+header {
+    width: 1440px;
+    height: 70px;
+    background-color: rgba(0,0,0,0);
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    z-index: 9999;
+}
+header nav {
+    width: 70px;
+    height: 70px;
+}
+header .contact {
+    flex: 1;
+}
+header .contact marquee {
+    padding-top: 12px;
+    font-size: 26px;
+    font-weight: 600;
+    z-index: 988;
+}
+*/
+section {
+    width: 100%;
+    height: 969px;
+}
+.sec1 {
+    position: relative;
+}
+.sec1 .intro {
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 300px;
+}
+
+.sec1 .intro span {
+    font-size: 49px;
+    font-weight: 600;
+}
+.sec1 .intro>p {
+    margin-top: 25px;
+    font-size: 20px;
+    line-height: 1.3;
+}
+.sec1 .intro .mimo {
+    width: 421px;
+    height: 421px;
+    background: url(../img/aboutme.png) no-repeat;
+    position: absolute;
+    right: 170px;
+    top: 231px;
+}
+.sec1 .tag {
+    margin-top: 40px;
+}
+.sec1 .tag span {
+    background: #ddd;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 2px 13px;
+    color: #222;
+    display: inline-block;
+    margin-right: 6px;
+    cursor: default;
+}
+.sec1 .tag span:hover {
+    background: #fff;
+}
+
+.sec2 .profile {
+    width: 90%;
+    display: flex;
+    margin: 0 auto;
+    padding-top: 180px;
+}
+.sec2 .profile .pic {
+    width: 380px;
+    height: 380px;
+    background: url(../img/about.png) no-repeat;
+    background-size: 90%;
+    background-position: center;
+    margin-left: 30px;
+    border-radius: 120px;
+}
+.sec2 .profile .dis {
+    flex: 1;
+    margin: 0 30px;
+    background: #424242;
+    border-radius: 50px;
+    padding: 28px 36px;
+    font-size: 21px;
+    line-height: 2;
+}
+.sec2 .profile .dis>span>p {font-size: 18px;}
+.sec2 .profile .dis>span>p:first-child {
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-top: 19px;
+}
+.sec2 .profile .dis>span>p:nth-child(2) {
+    margin-top: 20px;
+}
+.sec2 .profile .dis>span>span {
+    display: block;
+    font-size: 18px;
+    padding-top: 30px;
+    padding-left: 60px;
+}
+.sec2 .skill {
+    width: 87%;
+    height: 250px;
+    border-radius: 150px;
+    background: #424242;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+}
+.sec2 .skill p {
+    display: block;
+    font-size: 40px;
+    font-weight: 600;
+    position: absolute;
+    top: 90px;
+    left: 60px;
+}
+.sec2 .skill .icon {
+    width: 940px;
+    height: 250px;
+    margin-left: 240px;
+    display: flex;
+}
+.sec2 .skill .icon .flip-card {
+    flex: 1;
+    position: relative;
+    margin-top: 50px;
+}
+.sec2 .skill .icon .flip-card .front,
+.back {
+  backface-visibility: hidden;
+  transition: transform 500ms;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.sec2 .skill .icon .flip-card .front {
+    z-index: 2;
+    position: absolute;
+}
+.sec2 .skill .icon .flip-card .back {
+    transform: rotateY(-180deg);
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    top: 20px;
+    left: 12px;
+    z-index: 1;
+    text-align: center;
+    font-size: 16px;
+}
+.sec2 .skill .icon .flip-card:first-child .front {
+    background: url(../img/licen_1.png) no-repeat;
+    background-size: 100%;
+    z-index: 2;
+}
+.sec2 .skill .icon .flip-card:first-child .back {
+    top: 40px;
+}
+.sec2 .skill .icon .flip-card:nth-child(2) .front {
+    background: url(../img/licen_2.png) no-repeat;
+    background-size: 100%;
+    z-index: 2;
+}
+.sec2 .skill .icon .flip-card:nth-child(2) .back {
+    top: 30px;
+}
+.sec2 .skill .icon .flip-card:nth-child(3) .front {
+    background: url(../img/licen_4.png) no-repeat;
+    background-size: 100%;
+    z-index: 2;
+}
+.sec2 .skill .icon .flip-card:nth-child(4) .front {
+    background: url(../img/licen_3.png) no-repeat;
+    background-size: 90%;
+    z-index: 2;
+}
+.sec2 .skill .icon .flip-card:nth-child(4) .back {
+    left: 6px;
+}
+.sec2 .skill .icon .flip-card:nth-child(5) .front {
+    background: url(../img/licen_5.png) no-repeat;
+    background-size: 93%;
+    z-index: 2;
+}
+.sec2 .skill .icon .flip-card:nth-child(5) .back {
+    left: 4px;
+    top: 40px;
+}
+.sec2 .skill .icon .flip-card:nth-child(6) .front {
+    background: url(../img/licen_6.png) no-repeat;
+    background-size: 93%;
+    z-index: 2;
+}
+.sec2 .skill .icon .flip-card:nth-child(6) .back {
+    left: 6px;
+    top: 40px;
+}
+.flip-card:hover .front {
+  transform: rotateY(180deg);
+  transform: perspective(300) rotateY(180deg);
+}
+.flip-card:hover .back {
+  z-index: 950;
+  transform: rotateY(0deg) !important;
+}
+
+.sec3 {
+    padding-top: 70px;
+}
+.sec3 p {
+    position: absolute;
+    font-size: 50px;
+    font-weight: 600;
+}
+.sec3 .slide{
+    position: relative;
+}
+.sec3 img{
+    width: 760px;
+    display: block;
+    position: absolute;
+    top: 120px;
+}
+.sec3 .work1 .brita {
+    width: 700px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 45px;
+}
+.sec3 .work1 .brita h2 {
+    font-size: 70px;
+}
+.sec3 .work1 .brita p {
+    font-size: 21px;
+    font-weight: 200;
+}
+.sec3 .work1 .brita .sub {
+    display: block;
+}
+.sec3 .work1 .brita .sub h4 {
+    font-size: 50px;
+    font-weight: 400;
+}
+.sec3 .work1 .brita .sub>p {
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    padding-right: 60px;
+}
+.sec3 .work1 .brita .sub>p span {
+    display: block;
+    margin-top: 70px;
+    font-size: 15px;
+}
+.sec3 .work1 .brita .sub .button {
+    display: block;
+    margin-top: 320px;
+}
+.sec3 .work1 .brita .sub .button button {
+    border: 0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+    color: var(-button-color);
+}
+.sec3 .work1 .brita .sub .button button:hover {
+    background-color: var(--button-hover);
+}
+.sec3 .work2 .pantone {
+    width: 700px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 45px;
+}
+.sec3 .work2 .pantone h2 {
+    font-size: 70px;
+}
+.sec3 .work2 .pantone p {
+    font-size: 21px;
+    font-weight: 200;
+}
+.sec3 .work2 .pantone .sub {
+    display: block;
+}
+.sec3 .work2 .pantone .sub h4 {
+    font-size: 50px;
+    font-weight: 400;
+}
+.sec3 .work2 .pantone .sub>p {
+    display: block;
+    margin-top: 60px;
+    font-size: 18px;
+    padding-right: 60px;
+}
+.sec3 .work2 .pantone .sub>p span {
+    display: block;
+    margin-top: 0px;
+    font-size: 15px;
+}
+.sec3 .work2 .pantone .sub .button {
+    display: block;
+    margin-top: 320px;
+}
+.sec3 .work2 .pantone .sub .button button {
+    border: 0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.sec3 .work2 .pantone .sub .button button:hover {
+    background-color: var(--button-hover);
+}
+.sec3 .work3 .youth {
+    width: 700px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 45px;
+}
+.sec3 .work3 .youth h2 {
+    font-size: 70px;
+}
+.sec3 .work3 .youth p {
+    font-size: 21px;
+    font-weight: 200;
+}
+.sec3 .work3 .youth .sub {
+    display: block;
+}
+.sec3 .work3 .youth .sub h4 {
+    font-size: 50px;
+    font-weight: 400;
+}
+.sec3 .work3 .youth .sub>p {
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    padding-right: 60px;
+}
+.sec3 .work3 .youth .sub>p span {
+    display: block;
+    margin-top: 70px;
+    font-size: 15px;
+}
+.sec3 .work3 .youth .sub .button {
+    display: block;
+    margin-top: 320px;
+}
+.sec3 .work3 .youth .sub .button button {
+    border: 0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.sec3 .work3 .youth .sub .button button:hover {
+    background-color: var(--button-hover);
+}
+.sec3 .work2 .pantone {
+    width: 700px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 45px;
+}
+.sec3 .work2 .pantone h2 {
+    font-size: 70px;
+}
+.sec3 .work2 .pantone p {
+    font-size: 21px;
+    font-weight: 200;
+}
+.sec3 .work2 .pantone .sub {
+    display: block;
+}
+.sec3 .work2 .pantone .sub h4 {
+    font-size: 50px;
+    font-weight: 400;
+}
+.sec3 .work2 .pantone .sub>p {
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    padding-right: 60px;
+}
+.sec3 .work2 .pantone .sub>p span {
+    display: block;
+    margin-top: 70px;
+    font-size: 15px;
+}
+.sec3 .work2 .pantone .sub .button {
+    display: block;
+    margin-top: 320px;
+}
+.sec3 .work2 .pantone .sub .button button {
+    border: 0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.sec3 .work2 .pantone .sub .button button:hover {
+    background-color: var(--button-hover);
+}
+.sec3 .work4 .bohun {
+    width: 700px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 45px;
+}
+.sec3 .work4 .bohun h2 {
+    font-size: 70px;
+}
+.sec3 .work4 .bohun p {
+    font-size: 21px;
+    font-weight: 200;
+}
+.sec3 .work4 .bohun .sub {
+    display: block;
+}
+.sec3 .work4 .bohun .sub h4 {
+    font-size: 50px;
+    font-weight: 400;
+}
+.sec3 .work4 .bohun .sub>p {
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    padding-right: 60px;
+}
+.sec3 .work4 .bohun .sub>p span {
+    display: block;
+    margin-top: 70px;
+    font-size: 15px;
+}
+.sec3 .work4 .bohun .sub .button {
+    display: block;
+    margin-top: 320px;
+}
+.sec3 .work4 .bohun .sub .button button {
+    border: 0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.sec3 .work4 .bohun .sub .button button:hover {
+    background-color: var(--button-hover);
+}
+.sec3 .work5 .levis {
+    width: 700px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 45px;
+}
+.sec3 .work5 .levis h2 {
+    font-size: 70px;
+}
+.sec3 .work5 .levis p {
+    font-size: 21px;
+    font-weight: 200;
+}
+.sec3 .work5 .levis .sub {
+    display: block;
+}
+.sec3 .work5 .levis .sub h4 {
+    font-size: 50px;
+    font-weight: 400;
+}
+.sec3 .work5 .levis .sub>p {
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    padding-right: 60px;
+}
+.sec3 .work5 .levis .sub>p span {
+    display: block;
+    margin-top: 70px;
+    font-size: 15px;
+}
+.sec3 .work5 .levis .sub .button {
+    display: block;
+    margin-top: 320px;
+}
+.sec3 .work5 .levis .sub .button button {
+    border: 0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.sec3 .work5 .levis .sub .button button:hover {
+    background-color: var(--button-hover);
+}
+.sec3 .work6 .huts {
+    width: 700px;
+    height: 800px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 45px;
+}
+.sec3 .work6 .huts h2 {
+    font-size: 70px;
+}
+.sec3 .work6 .huts p {
+    font-size: 21px;
+    font-weight: 200;
+}
+.sec3 .work6 .huts .sub {
+    display: block;
+}
+.sec3 .work6 .huts .sub h4 {
+    font-size: 50px;
+    font-weight: 400;
+}
+.sec3 .work6 .huts .sub>p {
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    padding-right: 60px;
+}
+.sec3 .work6 .huts .sub>p span {
+    display: block;
+    margin-top: 70px;
+    font-size: 15px;
+}
+.sec3 .work6 .huts .sub .button {
+    display: block;
+    margin-top: 320px;
+}
+.sec3 .work6 .huts .sub .button button {
+    border: 0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.sec3 .work6 .huts .sub .button button:hover {
+    background-color: var(--button-hover);
+}
+.sec3 .work7 {
+    position: relative;
+}
+.sec3 .work7 p {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+}
+.sec3 .work7 #computer {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 320px;
+    right: 750px;
+    top: 200px;
+    overflow: hidden;
+    background: url(../img/comps.png) no-repeat;
+    background-size: 180%;
+    background-position: center;
+    transition: .3s;
+    cursor: pointer;
+}
+.sec3 .work7 #computer:hover {
+    background-size: 200%;
+}
+.sec3 .work7 #computer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #e5007e;
+    border-radius: 320px;
+    z-index: -1;
+}
+.sec3 .work7 #space {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 320px;
+    right: 400px;
+    top: 200px;
+    overflow: hidden;
+    background: url(../img/earth.png) no-repeat;
+    background-size: 180%;
+    background-position: center;
+    transition: .3s;
+    cursor: pointer;
+}
+.sec3 .work7 #space:hover {
+    background-size: 210%;
+}
+.sec3 .work7 #space::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url(../img/spacebg.jpg) no-repeat;
+    border-radius: 320px;
+    z-index: -1;
+}
+.sec3 .work7 #duck {
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    border-radius: 320px;
+    right: 40px;
+    top: 200px;
+    overflow: hidden;
+    background: url(../img/ducks.png) no-repeat;
+    background-size: 180%;
+    background-position: left;
+    transition: .3s;
+    cursor: pointer;
+}
+.sec3 .work7 #duck:hover {
+    background-size: 210%;
+}
+.sec3 .work7 #duck::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #f49f1c;
+    border-radius: 320px;
+    z-index: -1;
+}
+.sec3 .work7 .up {
+    width: 320px;
+    height: 120px;
+    background: rgba(0,0,0,0.7);
+    border-bottom-left-radius: 320px;
+    border-bottom-right-radius: 320px;
+    position: absolute;
+    bottom: -120px;
+    text-align: center;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.sec4 {
+    text-align: center;
+    position: relative;
+}
+.sec4 #cong {
+    width: 340px;
+    height: 340px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: url(../img/congraturation.png) no-repeat;
+    background-size: 100%;
+    background-position: center 50px;
+}
+.sec4 h2 {
+    font-size: 62px;
+    margin-top: 40px;
+    font-weight: 900;
+}
+.sec4 #contact {
+    display: block;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+}
+.sec4 #contact #email {
+    font-size: 32px;
+    position: relative;
+}
+.sec4 #contact #call {
+    position: relative;
+    font-size: 32px;
+}
+.sec4 #contact #call p:nth-child(1) {
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+.sec4 #contact #call p:nth-child(2) {
+    margin-top: -47px;
+    opacity: 0;
+}
+.sec4 #answer {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.sec4 footer p {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: normal;
+}

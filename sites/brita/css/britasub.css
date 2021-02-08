@@ -1,0 +1,345 @@
+/*브리타 서브시안 스타일*/
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul,li {list-style: none;}
+a {color: inherit; text-decoration: none;}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    width: 1280px;
+    height: 130px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+header h1 {
+    width: 150px;
+    height: 35px;
+    background: url(../img/logo.png) no-repeat;
+    background-size: 100%;
+    margin-top: 23px;
+    margin-left: 35px;
+}
+header nav {
+    width: 96%;
+    height: 57px;
+    margin: 0 auto;
+    margin-top: 14px;
+    border-top: 2px solid #ccc;
+}
+header .gnb li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #999;
+}
+
+header .gnb li:hover {
+    color: #1b679f;
+    font-weight: 600;
+}
+
+section {
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.sec01 {
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+    float: left;
+    position: relative;
+}
+.sec01 .fun {
+    width: 50%;
+    float: left;
+}
+.sec01 .fun>img {
+    margin-left: 150px;
+}
+.sec01 .main {
+    width: 50%;
+    float: left;
+    position: relative;
+}
+.sec01 .main h2 {
+    font-weight: 400;
+    font-size: 37px;
+}
+.sec01 .main h2 strong {
+    font-size: 45px;
+    font-weight: 700;
+    margin-right: 10px;
+}
+.sec01 .main>p {
+    margin-top: 20px;
+    font-size: 21px;
+    padding-left: 15px;
+    color: #777;
+}
+.sec01 .main>span {
+    display: block;
+    margin-top: 20px;
+}
+.sec01 .main span img {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #cfd8de;
+    margin-right: 15px;
+}
+.sec01 .main span img:first-child {
+    margin-left: 20px;
+}
+.sec01 .main .max {
+    margin-left: 22px;
+    margin-top: 20px;
+}
+.sec01 .main .max p {
+    font-size: 12px;
+    display: block;
+    margin-top: 10px;
+}
+
+.sec02 {
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-top: 100px;
+}
+.sec02 h2 {
+    width: 100%;
+    font-size: 30px;
+    padding: 20px 0 20px 50px;
+    float: left;
+    /*border-top: 1px solid blue;
+    border-bottom: 1px solid blue;*/
+}
+.sec02 .in {
+    width: 100%;
+    padding-left: 110px;
+    margin-top: 70px;
+    float: left;
+}
+.sec02 .in img {
+    float: left;
+    width: 480px;
+}
+.sec02 .in .dis {
+    width: 50%;
+    float: left;
+    margin-left: 90px;
+    padding-top: 25px;
+}
+.sec02 .in .dis p, span {
+    display: block;
+}
+.sec02 .in .dis p {
+    font-size: 22px;
+    font-weight: 600;
+}
+.sec02 .in .dis span {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 2px;
+    margin-bottom: 35px;
+    color: #777;
+}
+.sec02 .measure {
+    width: 100%;
+    float: left;
+    margin-top: 80px;
+}
+.sec02 .measure .mea {
+    width: 50%;
+    float: left;
+    padding-left: 250px;
+}
+.sec02 .measure h4 {
+    display: inline-block;
+    font-size: 32px;
+    margin-top: 280px;
+    margin-bottom: 42px;
+}
+.sec02 .measure span {
+    font-size: 20px;
+    line-height: 1.5;
+}
+.sec02 .measure img {
+    display: inline-block;
+    padding-top: 50px;
+    float: left;
+}
+.sec02 .filter {
+    float: left;
+    margin-top: 135px;
+}
+.sec02 .filter img {
+    float: left;
+    margin-left: 230px;
+}
+.sec02 .fil {
+    float: left;
+    margin-left: 140px;
+    padding-top: 30px;
+}
+.sec02 .filter h4 {
+    display: inline-block;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+.sec02 .filter span {
+    font-size: 20px;
+}
+
+#wrap {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.sec03 {
+    width: 100%;
+    float: left;
+    background-color: #d4eeff;
+    padding-top: 90px;
+    margin-top: 120px;
+    padding-bottom: 70px;
+}
+.sec03 h4 {
+    font-size: 30px;
+    text-align: center;
+}
+.sec03 .logos {
+    margin-top: 56px;
+}
+.sec03 .logos img {
+    background-color: #fff;
+    width: 156px;
+    margin-right: 36px;
+}
+.sec03 .logos img:first-child {
+    margin-left: 70px;
+}
+.sec03 .logos img:last-child {
+    margin-right: 0;
+}
+.sec03 .offline {
+    width: 245px;
+    height: 57px;
+    border-radius: 16px;
+    font-size: 21px;
+    line-height: 57px;
+    text-align: center;
+    background: #59ace3;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.sec04 {
+    width: 100%;
+    float: left;
+    padding-top: 125px;
+    padding-bottom: 190px;
+}
+.sec04 h4 {
+    font-size: 32px;
+    text-align: center;
+}
+.sec04 .prod {
+    float: left;
+    margin-top: 45px;
+    margin-left: 170px;
+    position: relative;
+}
+.sec04 .prod .prev {
+    width: 40px;
+    height: 85px;
+    background: url(../img/left.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -100px;
+    cursor: pointer;
+}
+.sec04 .prod .next {
+    width: 40px;
+    height: 85px;
+    background: url(../img/right.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100px;
+    cursor: pointer;
+}
+.sec04 .prod img {
+    width: 280px;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 0px;
+    box-shadow: 3px 3px 8px #ddd;
+    margin-right: 45px;
+}
+.sec04 .prod img:last-child {
+    margin-right: 0;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    float: left;
+    background-color: #e6e6eb;
+}
+
+footer #f_wrap {
+    width: 1280px;
+    height: 200px;
+    margin: 0 auto;
+}
+#f_wrap .logo {
+    width: 135px;
+    height: 30px;
+    background: url(../img/logo.png) no-repeat;
+    background-size: contain;
+    filter: grayscale(100%);
+    opacity: 0.4;
+    float: left;
+    margin-top: 33px;
+    margin-left: 130px;
+    margin-right: 120px;
+}
+#f_wrap .mid {
+    width: 33.33%;
+    float: left;
+    margin-right: 40px;
+    padding-top: 33px;
+    padding-left: 30px;
+    color: #777;
+    line-height: 1.5;
+    font-size: 14px;
+}
+#f_wrap .mid p:last-child {
+    margin-top: 60px;
+}
+#f_wrap .rig {
+    width: 33.33%;
+    float: left;
+    padding-top: 33px;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.8;
+}
+#f_wrap .rig strong {
+    font-size: 25px;
+    color: #1b679f;
+}

@@ -1,0 +1,645 @@
+/*브리타 스타일문서*/
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ul,li {list-style: none;}
+a {color: inherit; text-decoration: none;}
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow-x: hidden;
+}
+
+/*::selection {
+    background: rgba(181,230,29,.4);
+    color: #fff;
+}*/
+
+/*레이아웃 시작*/
+header {
+    width: 1280px;
+    height: 130px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
+}
+header h1 {
+    width: 150px;
+    height: 35px;
+    background: url(../img/logo.png) no-repeat;
+    background-size: 100%;
+    margin-top: 23px;
+    margin-left: 35px;
+}
+header nav {
+    width: 96%;
+    height: 57px;
+    margin: 0 auto;
+    margin-top: 14px;
+    border-top: 2px solid #ccc;
+}
+header .gnb li {
+    width: 25%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: #999;
+}
+
+header .gnb li:hover {
+    color: #1b679f;
+    font-weight: 600;
+}
+
+section {
+    position: relative;
+    width: 1920px;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.sec01 {
+    position: relative;
+    width: 100%;
+    height: 1030px;
+    background: url(../img/pngegg.png) no-repeat;
+    background-position: 80%;
+}
+.sec01 #bg1 {
+    position: absolute;
+    width: 502px;
+    left: -90px;
+    z-index: -1;
+}
+.sec01 .left {
+    width: 60%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.sec01 .left .marella {
+    position: absolute;
+    top: 280px;
+    left: 450px;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1;
+    opacity: 0;
+    margin-left: -70px;
+}
+.sec01 .left .marella strong {
+    font-size: 80px;
+}
+.sec01 .left .brita {
+    width: 100%;
+    display: block;
+    font-size: 26px;
+    text-align: right;
+    position: relative;
+    top: 400px;
+    padding-top: 20px;
+    padding-right: 170px;
+    font-weight: 400;
+    color: #444;
+    opacity: 0;
+}
+.sec01 .brita .more {
+    width: 125px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #1b679f;
+    color: #fff;
+    border-radius: 8px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 860px;
+    padding: 8px 20px;
+    /*그림자*/
+    transition-duration: 0.3s;
+}
+.sec01 .left .more:hover {
+    margin-top: 44px;
+    margin-left: 859px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,.6);
+}
+
+.sec01 .right {
+    width: 40%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.sec01 .right img {
+    position: absolute;
+   /* width: 600px;
+    bottom: 100px;
+    left: -70px;*/
+    width: 500px;
+}
+.sec01 .right #cap {
+    /*top: 230px;*/
+    top: 300px;
+    left: -37px;
+    z-index: 5;
+    width: 400px;
+}
+.sec01 .right #filter {
+    /*top: 300px;*/
+    top: 330px;
+    left: 50px;
+    z-index: 3;
+    width: 250px;
+}
+.sec01 .right #basket {
+    /*top: 400px;*/
+    width: 450px;
+    top: 340px;
+    left: -20px;
+    z-index: 4;
+}
+.sec01 .right #bottle {
+    top: 400px;
+    top: 250px;
+    left: -30px;
+    z-index: 1;
+}
+.sec01 .right #middle {
+    width: 450px;
+    top: 340px;
+    left: -20px;
+    z-index: 2;
+}
+.sec01 .right #bottom {
+    top: 80px;
+    left: -37px;
+    z-index: 1;
+}
+.sec01 .right #bocover {
+    top: 343px;
+    left: -37px;
+    z-index: 5;
+}
+.sec01 .reprod {
+    position: absolute;
+    width: 100%; 
+    float: left;
+    top: 660px;
+    padding-left: 420px;
+}
+.sec01 .reprod h4 {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    color: #444;
+}
+.sec01 .reprod div {
+    float: left;
+    margin-right: 70px;
+    transition-duration: .6s;
+    cursor: pointer;
+}
+.sec01 .reprod div:hover {
+    transform: scale(1.1);
+}
+.sec01 .reprod div:last-child {
+    margin-right: 0;
+}
+
+
+.sec02 {
+    position: relative;
+    width: 100%;
+    height: 1185px;
+}
+.sec02 #bg2 {
+    position: absolute;
+    top: 170px;
+    right: 80px;
+}
+.sec02 .company {
+    height: 415px;
+}
+.sec02 .company img {
+    width: 593px;
+    /*margin-left: 275px;*/
+    margin-left: 240px;
+    margin-right: 25px;
+    float: left;
+    opacity: 0;
+}
+.sec02 .company .story {
+    width: 695px;
+    height: 233px;
+    margin-top: 183px;
+    float: left;
+    color: #444;
+}
+.sec02 .company .story h2 {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 0.8;
+    color: rgba(27,103,159,.3);
+    margin-bottom: 10px;
+}
+.sec02 .company .story p {
+    display: inline;
+    font-size: 28px;
+    margin-left: 8px;
+}
+.sec02 .watercup {margin-top: 160px;}
+.sec02 .watercup img {
+    width: 490px;
+    float: right;
+    margin-right: 308px;
+    margin-top: -100px;
+    opacity: 0;
+}
+.sec02 .watercup .story {
+    width: 790px;
+    height: 550px;
+    margin-left: 310px;
+    padding-top: 58px;
+    color: #444;
+}
+.sec02 .watercup .story h4 {
+    font-size: 34px;
+    font-weight: 900;
+    color: rgba(0,0,0,.3);
+    text-align: right;
+}
+.sec02 .watercup .story .taste {
+    margin-bottom: 70px;
+}
+
+.sec03 {
+    position: relative;
+    width: 100%;
+    height: 865px;
+    /*background: url(../img/sec03bg.png) no-repeat;
+    background-size: 1280px;
+    background-position: center;*/
+}
+.sec03 #bg3 {
+    position: absolute;
+    width: 500px;
+    right: 270px;
+    bottom: 0;
+}
+.sec03::before {
+    width: 100%;
+    height: 865px;
+    content: '';
+    position: absolute;
+    top: -200px;
+    background: url(../img/sec03bg.png) no-repeat;
+    background-size: 1380px;
+    background-position: center;
+    opacity: .5;
+}
+/*.sec03.changed::before {
+    width: 100%;
+    height: 865px;
+    content: '';
+    position: absolute;
+    top: -190px;
+    background: url(../img/sec03bg.png) no-repeat;
+    background-size: 1280px;
+    background-position: center;
+    opacity: .5;
+}*/
+/*.sec03 video {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}*/
+.sec03 p {
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.3;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.sec04 {
+    position: relative;
+    width: 100%;
+    height: 628px;
+}
+.sec04::before {
+    content: '';
+    width: 100%;
+    height: 628px;
+    background: url(../img/Rectangle%203.jpg) no-repeat;
+    background-size: 1380px;
+    background-position: center;
+    position: absolute;
+    z-index: -1;
+}
+.sec04 h3 {
+    font-size: 40px;
+    padding-top: 200px;
+    margin-bottom: 68px;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+}
+.sec04 p {
+    font-size: 15px; 
+    line-height: 1.7; 
+    font-weight: 300;
+    margin-bottom: 90px;
+    letter-spacing: .2px;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+}
+.sec04 h1 {
+    font-size: 54px;
+    color: #444;
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -160px;
+}
+
+.sec05 {
+    margin-top: 200px;
+    position: relative;
+    width: 100%;
+    height: 805px;
+}
+.sec05 h4 {
+    font-size: 30px;
+    font-weight: 500;
+    /*margin-top: 135px;*/
+    margin-top: 110px;
+    margin-bottom: 92px;
+    text-align: center;
+    opacity: 0;
+}
+.sec05 .graph {
+    width: 470px;
+    height: 330px;
+    margin-left: 490px;
+    margin-right: 48px;
+    float: left;
+    opacity: 0;
+}
+.sec05 .graph p {
+    display: block;
+    margin-top: 8px;
+    padding-left: 36px;
+    font-size: 12px;
+    font-weight: 200;
+    text-align: center;
+    float: left;
+}
+.sec05 .graph .g1 {
+    padding-top: 80px;
+    margin-left: 80px;
+    float: left;
+    position: relative;
+}
+.sec05 .graph .g1 img {
+    display: block;
+    float: left;
+    width: 145px;
+}
+.sec05 .graph .g1 span {
+    position: absolute;
+    font-size: 14px;
+}
+.sec05 .graph .g1 #co2_1 {
+    top: 55px;
+    right: 88px;
+}
+.sec05 .graph .g1 #bri_1 {
+    top: 195px;
+    right: 23px;
+}
+
+.sec05 .graph .g2 {
+    padding-top: 50px;
+    margin-left: 80px;
+    float: left;
+    position: relative;
+}
+.sec05 .graph .g2 img {
+    display: block;
+    float: left;
+    width: 135px;
+}
+.sec05 .graph .g2 span {
+    position: absolute;
+    font-size: 14px;
+}
+.sec05 .graph .g2 #co2_2 {
+    top: 26px;
+    right: 74px;
+}
+.sec05 .graph .g2 #bri_2 {
+    top: 198px;
+    right: 19px;
+}
+
+.sec05 .many {
+    width: 425px;
+    float: left;
+    padding-top: 40px;
+}
+.sec05 .many p {
+    font-size: 20px;
+    opacity: 0;
+}
+.sec05 .many p strong {
+    font-size: 28px;
+    color: #fff;
+    background-color: #b5e61d;
+}
+.sec05 .many p:first-child {
+    margin-bottom: 66px;
+}
+
+
+.sec06 {
+    position: relative;
+    width: 100%;
+    height: 582px;
+    margin-top: 70px;
+}
+.sec06::before {
+    width: 100%;
+    height: 582px;
+    position: absolute;
+    top: -90px;
+    content: '';
+    background: url(../img/brita_experience_personal_hydration_needs_family_in_kitchen_landscape.jpg) no-repeat;
+    background-size: 1280px;
+    background-position: center -120px;
+    opacity: 0.25;
+    z-index: -1;
+}
+.sec06 #usebrita {
+    position: absolute;
+    width: 1280px;
+    top: -155px;
+    left: 320px;
+}
+.sec06 .recycle {
+    margin-left: 385px;
+    width: 855px;
+    height: 365px;
+}
+.sec06 .recycle h2 {
+    font-size: 42px;
+    margin-bottom: 30px;
+}
+.sec06 .recycle p {
+    padding-top: 20px;
+}
+.sec06 .recycle strong {
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.sec07 {
+    position: relative;
+    width: 100%;
+    height: 835px;
+}
+.sec07 h2 {
+    margin-top: 138px;
+    font-size: 62px;
+    font-weight: 700;
+    color: #282d74;
+    text-align: center;
+}
+.sec07 p {
+    margin-top: 12px;
+    text-align: center;
+    color: #444;
+}
+.sec07 .gna {
+    margin-left: 445px;
+    margin-top: 78px;
+}
+.sec07 .gna div {
+    width: 300px;
+    height: 300px;
+    background-color: #282d74;
+    border-radius: 40px;
+    float: left;
+    margin-left: 65px;
+    cursor: pointer;
+    opacity: 0;
+    margin-top: -40px;
+}
+.sec07 .gna div:first-child {
+    margin-left: 0;
+}
+.sec07 .gna div:hover {
+    box-shadow: 3px 3px 20px #aaa;
+}
+.sec07 .gna div p {
+    color: #fff;
+    font-size: 21px;
+}
+.sec07 .gna .q1 img {
+    width: 320px;
+    margin-top: 40px;
+    margin-left: -10px;
+}
+.sec07 .gna .q1 p {
+    margin-top: -15px;
+}
+.sec07 .gna .q2 img {
+    width: 150px;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+.sec07 .gna .q2 p {
+    margin-top: 15px;
+}
+.sec07 .gna .q3 img {
+    width: 160px;
+    margin-top: 40px;
+    margin-left: 65px;
+}
+.sec07 .gna .q3 p {
+    margin-top: 27px;
+}
+.sec07 .top {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    border-radius: 30px;
+    line-height: 60px;
+    text-align: center;
+    bottom: 30px;
+    right: 40px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transform: rotate(90deg);
+    z-index: 9;
+}
+.sec07 .top:hover{
+    box-shadow: 3px 3px 5px #aaa;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #e6e6eb;
+}
+
+footer #f_wrap {
+    width: 1280px;
+    height: 200px;
+    margin: 0 auto;
+}
+#f_wrap .logo {
+    width: 135px;
+    height: 30px;
+    background: url(../img/logo.png) no-repeat;
+    background-size: contain;
+    filter: grayscale(100%);
+    opacity: 0.4;
+    float: left;
+    margin-top: 33px;
+    margin-left: 130px;
+    margin-right: 120px;
+}
+#f_wrap .mid {
+    width: 33.33%;
+    float: left;
+    margin-right: 40px;
+    padding-top: 33px;
+    padding-left: 30px;
+    color: #777;
+    line-height: 1.5;
+    font-size: 14px;
+}
+#f_wrap .mid p:last-child {
+    margin-top: 60px;
+}
+#f_wrap .rig {
+    width: 33.33%;
+    float: left;
+    padding-top: 33px;
+    color: #777;
+    font-size: 14px;
+    line-height: 1.8;
+}
+#f_wrap .rig strong {
+    font-size: 25px;
+    color: #1b679f;
+}
