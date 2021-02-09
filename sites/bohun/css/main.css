@@ -1,0 +1,962 @@
+/* 슬라이더 명령어 */
+.bx-wrapper {
+	width: auto !important;
+	height: 700px !important;
+	overflow: hidden !important;
+}
+
+/* 메인 홈페이지 style 문서 */
+/* 초기화 */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #404040;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+a img {
+	border: 0;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+/* 폰트 */
+@font-face {
+	font-family: 'SCDream1';
+	src: url('../font/SCDream1.otf') format('woff');
+}
+
+@font-face {
+	font-family: 'SCDream2';
+	src: url('../font/SCDream2.otf') format('woff');
+}
+
+@font-face {
+	font-family: 'SCDream3';
+	src: url('../font/SCDream3.otf') format('woff');
+}
+
+@font-face {
+	font-family: 'SCDream4';
+	src: url('../font/SCDream4.otf') format('woff');
+}
+
+@font-face {
+	font-family: 'SCDream5';
+	src: url('../font/SCDream5.otf') format('woff');
+}
+
+@font-face {
+	font-family: 'SCDream6';
+	src: url('../font/SCDream6.otf') format('woff');
+}
+
+@font-face {
+	font-family: 'SCDream7';
+	src: url('../font/SCDream7.otf') format('woff');
+}
+
+@font-face {
+	font-family: 'SCDream8';
+	src: url('../font/SCDream8.otf') format('woff');
+}
+
+@font-face {
+	font-family: 'SCDream9';
+	src: url('../font/SCDream9.otf') format('woff');
+}
+
+@font-face {
+	font-family: 'NanumSquare_acB';
+	src: url('../font/NanumSquare_acB') format('woff');
+}
+
+@font-face {
+	font-family: 'NanumSquare_acEB';
+	src: url('../font/NanumSquare_acEB') format('woff');
+}
+
+@font-face {
+	font-family: 'NanumSquare_acL';
+	src: url('../font/NanumSquare_acL') format('woff');
+}
+
+@font-face {
+	font-family: 'NanumSquare_acR';
+	src: url('../font/NanumSquare_acR') format('woff');
+}
+
+/* 레이아웃 */
+#wrap {
+	width: 100%;
+	height: auto;
+}
+
+/* 헤더 */
+header {
+	width: 100%;
+	height: 155px;
+	position: relative;
+}
+
+.top {
+	width: 1200px;
+	height: 105px;
+	margin: 0 auto;
+}
+
+.top .logo {
+	width: 245px;
+	height: 56px;
+	float: left;
+	margin-top: 24px;
+}
+
+.top .top_menu {
+	width: 192px;
+	height: 35px;
+	float: right;
+}
+
+.top .top_menu li {
+	width: 96px;
+	height: 35px;
+	font-size: 0.875rem;
+	font-family: 'Noto Sans KR', sans-serif;
+	float: left;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.top .top_menu li:hover {
+	color: #ee8c1f;
+}
+
+/* 반응형용 슬라이드 바*/
+.side_bar {
+	display: none;
+}
+
+/* 헤더>메뉴바 */
+nav {
+	width: 100%;
+	height: 50px;
+}
+
+nav .gnb {
+	width: 1200px;
+	height: 50px;
+	margin: 0 auto;
+}
+
+.gnb .menu {
+	width: 1200px;
+	height: 50px;
+}
+
+.menu > li {
+	width: 200px;
+	height: 50px;
+	float: left;
+	font-family: 'Noto Sans KR', sans-serif;
+	text-align: center;
+	line-height: 50px;
+}
+
+.sub {
+	width: 200px;
+	height: 250px;
+	margin-top: 10px;
+	display: none;
+	position: absolute;
+	;
+	z-index: 99999;
+	text-align: left;
+}
+
+.sub li {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #f7f0dd;
+	font-size: 0.875rem;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+.big_downbox {
+	width: 100%;
+	height: 250px;
+}
+
+.downbox {
+	width: 100%;
+	height: 250px;
+	background-color: #4a5c72;
+	position: absolute;
+	top: 100%;
+	z-index: 99998;
+	display: none;
+}
+
+nav .menu li:hover {
+	color: #ee8c1f;
+}
+
+nav .sub1 {
+	padding-left: 53px
+}
+
+nav .sub2 {
+	padding-left: 50px;
+}
+
+nav .sub3 {
+	padding-left: 71px;
+}
+
+nav .sub4 {
+	padding-left: 57px;
+}
+
+nav .sub5 {
+	padding-left: 57px;
+}
+
+nav .sub6 {
+	padding-left: 34px;
+}
+
+/* 퀵메뉴바 */
+.quick_menu {
+	width: 80px;
+	height: 60px;
+	position: absolute;
+	top: 300px;
+	right: 80px;
+	z-index: 9998;
+	margin: 0 auto;
+}
+
+.quick_menu img {
+	width: 80px;
+}
+
+.quick_menu .sub_quick {
+	width: 100%;
+	height: 16.66%;
+}
+
+.quick_menu .sub_quick li:nth-child(2n) {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 0.8rem;
+	text-align: center;
+}
+
+/* 퀵메뉴바 모달창 관련 */
+#modal_quick {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	display: none;
+	font-family: 'Noto Sans KR', sans-serif;    
+}
+
+.m_modal {
+	width: 450px;
+	height: 370px;
+	background-color: #f7f0dd;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#modal_quick .close_quick{
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: -30px;
+	right: 20px;
+	cursor: pointer;
+}
+
+.modal_name {
+	width: 450px;
+	height: 50px;
+	font-size: 40px;
+	line-height: 50px;
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+}
+
+table {
+	width: 600px;
+	height: auto;
+	border-collapse: collapse;
+}
+
+#join tr td {
+	height: 40px;
+	padding: 0 20px;
+}
+
+
+table input[type=text] {
+	height: 25px;
+	border: 0;
+}
+
+
+.check_td input[type=checkbox] {
+	width: 40px;
+}
+
+.check_td1 {
+	width: 170px;
+	padding-left: 20px;
+}
+
+.request {
+	width: 600px;
+	height: 50px;
+}
+
+.request {
+	width: 200px;
+	height: 50px;
+	background-color: #4a5c72;
+	margin: 0 auto;
+}
+
+.request>p {
+	font-size: 20px;
+	line-height: 50px;
+	color: #f7f0da;
+	margin-top: 40px;
+}
+
+.request>p>a{
+	margin-left: 22px;
+}
+
+.request > p:hover {
+	color: #ee8c1f;
+}
+
+/* 슬라이더 */
+.visual {
+	width: 100%;
+	height: 702px;
+}
+
+.visual .slider li {
+	width: 100%;
+	height: 702px;
+}
+
+/* 섹션1 - left */
+.section1 {
+	width: 1200px;
+	height: 640px;
+	margin: 0 auto;
+}
+
+.section1 .box {
+	width: 600px;
+	height: 640px;
+	float: left;
+}
+
+.section1 .box .left_bar {
+	width: 600px;
+	height: 640px;
+	margin-top: 100px;
+	margin-left: 100px;
+}
+
+.section1 .sub_bar {
+	width: 220px;
+	height: 230px;
+	float: left;
+	margin-top: 40px;
+	margin-right: 15px;
+	position: relative;
+	overflow: hidden;
+}
+
+.section1 .sub_bar #ipso {
+	height: 200px;
+	margin-left: -38px;
+}
+
+.section1 .sub_bar img {
+	position: absolute;
+	z-index: 999;
+}
+
+.section1 .text {
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 75px;
+	top: 200px;
+	font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.2rem;
+}
+
+.section1 .jabong {
+	position: absolute;
+	margin-top: 5px;
+	margin-left: 30px;
+	top: 200px;
+	font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.2rem;    
+}
+
+/* 영상통화 모달창 관련 */
+#modal {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	display: none;
+}
+
+#modal .box {
+	width: 968px;
+	height: 644px;
+	background: url(../img/images/%EC%A2%85%ED%95%A9.jpg);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#modal .close {
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	right: 40px;
+	cursor: pointer;
+}
+
+/* 섹션1 - gallery */
+.section1 .gallery {
+	width: 505px;
+	height: 360px;
+	margin-top: 210px;
+	position: relative;
+}
+
+.section1 .gallery h {
+	height: 100%;
+	font-size: 28px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 500;
+	/*background-color: yellow;*/
+}
+
+.section1 .gallery li {
+	width: 505px;
+	height: 285px;
+	position: absolute;
+	top: 60px;
+}
+
+.section1 p {
+	height: 14px;
+	font-size: 0.875rem;
+	font-family: 'Noto Sans KR', sans-serif;
+	float: right;
+	margin-top: -10px;
+	transition-duration: 0.5s
+}
+
+.section1 p:hover {
+	transform: scale(1.2);
+}
+
+/* 섹션2 */
+.section2 {
+	width: 100%;
+	height: 175px;
+	margin-top: 150px;
+	position: relative;
+}
+
+.section2 .background {
+	width: 1125px;
+	height: 175px;
+	position: absolute;
+	z-index: 999;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.section2 .bg {
+	width: 1125px;
+	height: 175px;
+	background-color: #4a5c72;
+	margin: 0 auto;
+}
+
+h3 {
+	width: 370px;
+	height: 48px;
+	margin: 0 auto;
+	padding-top: 35px;
+	font-size: 3rem;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #f2f2f2;
+	transition-duration: 0.5s;
+}
+
+h3:hover {
+	transform: scale(1.1);
+}
+
+h4 {
+	width: 220px;
+	height: 16px;
+	margin: 0 auto;
+	margin-top: 70px;
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #f2f2f2;
+}
+
+.background_box {
+	width: 100%;
+	height: 87.5px;
+	background-color: #f7f0dd;
+	position: absolute;
+	top: 50%
+}
+
+/* 섹션3 */
+.section3 {
+	width: 100%;
+	height: 690px;
+	background-color: #f7f0dd;
+
+}
+
+.section3 .s3_bigbox {
+	width: 58%;
+	height: 690px;
+	margin: 0 auto;
+}
+
+.section3 .s3_box {
+	width: 50%;
+	height: 516px;
+	float: left;
+}
+
+/* 섹션3 left */
+p {
+	font-size: 1.8rem;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 500;
+	margin-top: 185px;
+	margin-left: 20px;
+}
+
+.section3 .program {
+	width: 100%;
+	height: 516px;
+}
+
+.section3 .program li {
+	width: 250px;
+	height: 93px;
+	font-size: 1rem;
+	font-family: 'Noto Sans KR', sans-serif;
+	float: left;
+	margin-top: 20px;
+	margin-right: 16px;
+	border-radius: 35px;
+	overflow: hidden;
+}
+
+.section3 .program li a {
+	display: block;
+	margin-top: 35px;
+	margin-left: 20px;
+}
+
+.section3 .program li:first-child {
+
+	background-color: #ffffff;
+}
+
+.section3 .program img {
+	float: right;
+	margin-top: -60px;
+}
+
+.section3 .program li:nth-child(2) {
+	background-color: white;
+}
+
+.section3 .program li:nth-child(3) {
+	background-color: white;
+}
+
+.section3 .program li:nth-child(4) {
+	background-color: white;
+}
+
+/* 섹션3 right */
+.title {
+	list-style: none;
+	font-size: 1.8rem;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 500;
+	margin-top: 70px;
+}
+
+.title > a {
+	margin-left: 20px;
+}
+
+.title .see {
+	width: 100%;
+	height: 445px;
+	margin-top: 14px;
+/*	overflow: hidden;*/
+}
+
+.title .see > li {
+	width: 100%;
+	height: 20%;
+	transition-duration: 0.5s;
+
+}
+
+.title .sub_see {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.title .sub_see li:first-child {
+	font-size: 1.5rem;
+	font-family: SCDream7;
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	transform: translateY(-50%);
+}
+
+.title .sub_see li:last-child {
+	width: 66%;
+	font-size: 1rem;
+	font-family: SCDream5;
+	position: absolute;
+	top: 50%;
+	left: 120px;
+	transform: translateY(-50%);
+}
+
+.title .see > li:first-child {
+	background-color: white;
+}
+
+.title .see > li:nth-child(2) {
+	background-color: white;
+}
+
+.title .see > li:nth-child(3) {
+	background-color: white;
+}
+
+.title .see > li:nth-child(4) {
+	background-color: white;
+}
+
+.title .see > li:last-child {
+	background-color: white;
+}
+
+.title .see > li:hover {
+	transform: scale(1.1);
+	background-color: white;
+}
+
+/* 푸터 */
+footer {
+	width: 100%;
+	height: 150px;
+	background-color: #4a5c72;
+}
+
+footer .middle {
+	width: 1200px;
+	height: 150px;
+	margin: 0 auto;
+	font-size: 0.75rem;
+	font-family: SCDream3;
+	color: #f2f2f2;
+
+}
+
+span {
+	width: 530px;
+	float: left;
+	margin-top: 57px;
+	color: #f2f2f2;
+}
+
+.link {
+	float: right;
+	color: #f2f2f2;
+}
+
+.link li {
+	float: left;
+	margin-top: 69px;
+	border-right: 1px solid #f2f2f2;
+	color: #f2f2f2;
+}
+
+.link li:hover {
+	color: #f2f2f2;
+	text-decoration: underline;
+}
+
+.link li:first-child {
+	width: 57px;
+}
+
+.link li:nth-child(2) {
+	width: 78px;
+	text-align: center;
+}
+
+.link li:nth-child(3) {
+	width: 113px;
+	text-align: center;
+}
+
+.link li:last-child {
+	width: 114px;
+	text-align: right;
+	border: 0;
+}
+
+/* 반응형 ------------------------------------------------------------------------------------------*/
+@media all and (max-width:640px) {
+
+	/* 헤더 */
+	header {
+		width: 100%;
+		height: 100px;
+		position: relative;
+	}
+
+	header .top {
+		width: 100%;
+		height: 100px;
+		position: relative;
+	}
+
+	header .logo {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	header .top_menu {
+		display: none;
+	}
+
+	header nav {
+		display: none;
+	}
+
+	/* 슬라이더 */
+	header .side_bar {
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		z-index: 9999;
+	}
+
+	/* 트리거슬라이드 조작안됨...이거 하려면 처음부터 디자인 다시 해야함...? */
+	/* 퀵메뉴 */
+	.quick_menu {
+		display: none;
+	}
+
+	/* slider */
+	.visual {
+		width: 100%;
+		height: 200px;
+	}
+
+	.bx-wrapper {
+		width: 100%;
+		height: 200px !important;
+	}
+
+	/* 섹션1 */
+	.section1 {
+		width: 100%;
+	}
+
+	.section1 .box {
+		width: 100%;
+	}
+
+	.section1 .box .left_bar {
+		margin: 0;
+		margin-left: 30px;
+	}
+
+	.section1 .gallery {
+		width: 80%;
+		margin: 0;
+		margin-left: 10%;
+		position: relative;
+	}
+
+	.section1 .gallery img {
+		width: 80%;
+	}
+
+	.section1 .gallery h {
+		width: 81px;
+		height: 40px;
+		margin: 0 auto;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%)
+	}
+
+	.section1 .gallery p {
+		position: absolute;
+		top: 50px;
+		right: -20px
+	}
+
+	.section2 {
+		width: 100%;
+		margin-top: 400px
+	}
+
+	.background {
+		width: 100%;
+	}
+
+	.bg {
+		width: 100%;
+		position: inherit;
+	}
+
+	/* 섹션3 */
+	.section3 {
+		width: 100%;
+	}
+
+	.section3 .s3_bigbox {
+		width: 100%;
+		margin: 0;
+	}
+
+	.section3 .s3_bigbox .s3_box {
+		width: 100%;
+		margin-top: 50px;
+		position: relative;
+	}
+
+	.s3_box:first-child {
+		height: 250px;
+	}
+
+	.s3_box p {
+		margin: 0;
+		margin-top: -50px;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.s3_box .program {
+		height: 250px;
+	}
+
+	.s3_box .program li {
+		width: 41%;
+		margin: 0;
+		margin-top: 4%;
+		margin-left: 6%;
+	}
+
+	.s3_box:last-child {
+		position: relative;
+	}
+
+	.s3_box .title > a {
+		margin: 0 auto;
+		display: block;
+		width: 202px;
+		position: absolute;
+		top: 0%;
+		left: 50%;
+		transform: translateX(-50%)
+	}
+
+	.title .see li {
+		width: 100%;
+	}
+
+	.title .see li .sub_see {
+		width: 100%;
+	}
+
+	/* 푸터 */
+	footer {
+		width: 100%;
+		margin-top: 350px;
+	}
+
+	.middle {
+		width: 100%;
+		position: relative;
+	}
+
+	span {
+		width: 432px;
+		margin: 0;
+		float: none;
+		position: absolute;
+		top: 20px;
+		left: 25px;
+	}
+
+	.link {
+		width: 100%;
+		margin: 0;
+		float: none;
+		position: relative;
+		top: 40px;
+		left: 50px;
+	}
+
+}

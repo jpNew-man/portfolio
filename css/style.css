@@ -18,6 +18,13 @@ ul,li {list-style: none;}
     color: #000;
 }
 
+button {
+    outline: none;
+}
+button>a {
+    display: block;
+}
+
 body {
     width: 100%;
     height: auto;
@@ -287,7 +294,7 @@ section {
     position: absolute;
     top: 120px;
 }
-.sec3 .work1 .brita {
+.sec3 .inside .main {
     width: 700px;
     height: 800px;
     position: absolute;
@@ -295,36 +302,38 @@ section {
     right: 0;
     padding: 45px;
 }
-.sec3 .work1 .brita h2 {
+.sec3 .inside .main h2 {
     font-size: 70px;
 }
-.sec3 .work1 .brita p {
+.sec3 .inside .main p {
     font-size: 21px;
     font-weight: 200;
 }
-.sec3 .work1 .brita .sub {
+.sec3 .inside .main .sub {
     display: block;
 }
-.sec3 .work1 .brita .sub h4 {
+.sec3 .inside .main .sub h4 {
     font-size: 50px;
     font-weight: 400;
 }
-.sec3 .work1 .brita .sub>p {
+.sec3 .inside .main .sub>p {
     display: block;
     margin-top: 30px;
     font-size: 18px;
     padding-right: 60px;
 }
-.sec3 .work1 .brita .sub>p span {
+.sec3 .inside .main .sub>p span {
+    position: absolute;
     display: block;
-    margin-top: 70px;
+    /*margin-top: 30px;*/
+    top: 190px;
     font-size: 15px;
 }
-.sec3 .work1 .brita .sub .button {
+.sec3 .inside .main .sub .button {
     display: block;
     margin-top: 320px;
 }
-.sec3 .work1 .brita .sub .button button {
+.sec3 .inside .main .sub .button button {
     border: 0;
     padding: 15px 20px;
     border-radius: 15px;
@@ -332,10 +341,10 @@ section {
     font-size: 18px;
     color: var(-button-color);
 }
-.sec3 .work1 .brita .sub .button button:hover {
+.sec3 .inside .main .sub .button button:hover {
     background-color: var(--button-hover);
 }
-.sec3 .work2 .pantone {
+/*.sec3 .work2 .pantone {
     width: 700px;
     height: 800px;
     position: absolute;
@@ -616,7 +625,7 @@ section {
 }
 .sec3 .work6 .huts .sub .button button:hover {
     background-color: var(--button-hover);
-}
+}*/
 .sec3 .work7 {
     position: relative;
 }
@@ -726,6 +735,32 @@ section {
     text-align: center;
     padding-top: 20px;
     cursor: pointer;
+}
+.sec3 .work7 #modal {
+    position: absolute;
+    width: 1100px;
+    height: 700px;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,.9);
+    border-radius: 20px;
+    display: none;
+}
+.sec3 .work7 #modal span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.sec3 .work7 #modal div {
+    display: none;
+}
+.sec3 .work7 #modal img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .sec4 {

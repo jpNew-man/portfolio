@@ -28,3 +28,21 @@ $('.sec3 .work7 #duck').mouseover(function(){
 $('.sec3 .work7 #duck').mouseout(function(){
     $(this).children('.up').stop().animate({bottom:-120});
 });
+
+$('.work7 #computer').click(function(){
+    $('#modal').css("display","block");
+    $('#modal .com').css("display","block");
+});
+$('.work7 #space').click(function(){
+    $('#modal').css("display","block");
+    $('#modal .spa').css("display","block");
+});
+$('.work7 #duck').click(function(){
+    $('#modal').css("display","block");
+    $('#modal .duc').css("display","block");
+});
+
+$('#modal span').click(function(){
+    $('#modal').css("display","none");
+    $('#modal div').css("display","none");    
+});
