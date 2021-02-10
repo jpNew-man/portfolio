@@ -1,5 +1,9 @@
 /*포폴 스크립트*/
 
+$(window).ready(function() {    
+     $('#loading').hide();  
+});
+
 $('#wrap').fullpage();
 
 $('.sec4 #contact #call p:nth-child(1)').click(function(){
@@ -46,3 +50,4 @@ $('#modal span').click(function(){
     $('#modal').css("display","none");
     $('#modal div').css("display","none");    
 });
+    
