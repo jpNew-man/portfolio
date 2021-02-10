@@ -76,6 +76,7 @@ body {
     color: #eee;
     animation: flow 10s infinite alternate;
     font-family: 'Noto Sans KR';
+    overflow: hidden;
 }
 
 @keyframes flow {
