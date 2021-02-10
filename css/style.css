@@ -392,297 +392,19 @@ section {
 .sec3 .inside .main .sub .button button:hover {
     background-color: var(--button-hover);
 }
-/*.sec3 .work2 .pantone {
-    width: 700px;
-    height: 800px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 45px;
-}
-.sec3 .work2 .pantone h2 {
-    font-size: 70px;
-}
-.sec3 .work2 .pantone p {
-    font-size: 21px;
-    font-weight: 200;
-}
-.sec3 .work2 .pantone .sub {
-    display: block;
-}
-.sec3 .work2 .pantone .sub h4 {
-    font-size: 50px;
-    font-weight: 400;
-}
-.sec3 .work2 .pantone .sub>p {
-    display: block;
-    margin-top: 60px;
-    font-size: 18px;
-    padding-right: 60px;
-}
-.sec3 .work2 .pantone .sub>p span {
-    display: block;
-    margin-top: 0px;
-    font-size: 15px;
-}
-.sec3 .work2 .pantone .sub .button {
-    display: block;
-    margin-top: 320px;
-}
-.sec3 .work2 .pantone .sub .button button {
-    border: 0;
-    padding: 15px 20px;
-    border-radius: 15px;
-    margin-right: 10px;
-    font-size: 18px;
-}
-.sec3 .work2 .pantone .sub .button button:hover {
-    background-color: var(--button-hover);
-}
-.sec3 .work3 .youth {
-    width: 700px;
-    height: 800px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 45px;
-}
-.sec3 .work3 .youth h2 {
-    font-size: 70px;
-}
-.sec3 .work3 .youth p {
-    font-size: 21px;
-    font-weight: 200;
-}
-.sec3 .work3 .youth .sub {
-    display: block;
-}
-.sec3 .work3 .youth .sub h4 {
-    font-size: 50px;
-    font-weight: 400;
-}
-.sec3 .work3 .youth .sub>p {
-    display: block;
-    margin-top: 30px;
-    font-size: 18px;
-    padding-right: 60px;
-}
-.sec3 .work3 .youth .sub>p span {
-    display: block;
-    margin-top: 70px;
-    font-size: 15px;
-}
-.sec3 .work3 .youth .sub .button {
-    display: block;
-    margin-top: 320px;
-}
-.sec3 .work3 .youth .sub .button button {
-    border: 0;
-    padding: 15px 20px;
-    border-radius: 15px;
-    margin-right: 10px;
-    font-size: 18px;
-}
-.sec3 .work3 .youth .sub .button button:hover {
-    background-color: var(--button-hover);
-}
-.sec3 .work2 .pantone {
-    width: 700px;
-    height: 800px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 45px;
-}
-.sec3 .work2 .pantone h2 {
-    font-size: 70px;
-}
-.sec3 .work2 .pantone p {
-    font-size: 21px;
-    font-weight: 200;
-}
-.sec3 .work2 .pantone .sub {
-    display: block;
-}
-.sec3 .work2 .pantone .sub h4 {
-    font-size: 50px;
-    font-weight: 400;
-}
-.sec3 .work2 .pantone .sub>p {
-    display: block;
-    margin-top: 30px;
-    font-size: 18px;
-    padding-right: 60px;
-}
-.sec3 .work2 .pantone .sub>p span {
-    display: block;
-    margin-top: 70px;
-    font-size: 15px;
-}
-.sec3 .work2 .pantone .sub .button {
-    display: block;
-    margin-top: 320px;
-}
-.sec3 .work2 .pantone .sub .button button {
-    border: 0;
-    padding: 15px 20px;
-    border-radius: 15px;
-    margin-right: 10px;
-    font-size: 18px;
-}
-.sec3 .work2 .pantone .sub .button button:hover {
-    background-color: var(--button-hover);
-}
-.sec3 .work4 .bohun {
-    width: 700px;
-    height: 800px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 45px;
-}
-.sec3 .work4 .bohun h2 {
-    font-size: 70px;
-}
-.sec3 .work4 .bohun p {
-    font-size: 21px;
-    font-weight: 200;
-}
-.sec3 .work4 .bohun .sub {
-    display: block;
-}
-.sec3 .work4 .bohun .sub h4 {
-    font-size: 50px;
-    font-weight: 400;
-}
-.sec3 .work4 .bohun .sub>p {
-    display: block;
-    margin-top: 30px;
-    font-size: 18px;
-    padding-right: 60px;
-}
-.sec3 .work4 .bohun .sub>p span {
-    display: block;
-    margin-top: 70px;
-    font-size: 15px;
-}
-.sec3 .work4 .bohun .sub .button {
-    display: block;
-    margin-top: 320px;
-}
-.sec3 .work4 .bohun .sub .button button {
-    border: 0;
-    padding: 15px 20px;
-    border-radius: 15px;
-    margin-right: 10px;
-    font-size: 18px;
-}
-.sec3 .work4 .bohun .sub .button button:hover {
-    background-color: var(--button-hover);
-}
-.sec3 .work5 .levis {
-    width: 700px;
-    height: 800px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 45px;
-}
-.sec3 .work5 .levis h2 {
-    font-size: 70px;
-}
-.sec3 .work5 .levis p {
-    font-size: 21px;
-    font-weight: 200;
-}
-.sec3 .work5 .levis .sub {
-    display: block;
-}
-.sec3 .work5 .levis .sub h4 {
-    font-size: 50px;
-    font-weight: 400;
-}
-.sec3 .work5 .levis .sub>p {
-    display: block;
-    margin-top: 30px;
-    font-size: 18px;
-    padding-right: 60px;
-}
-.sec3 .work5 .levis .sub>p span {
-    display: block;
-    margin-top: 70px;
-    font-size: 15px;
-}
-.sec3 .work5 .levis .sub .button {
-    display: block;
-    margin-top: 320px;
-}
-.sec3 .work5 .levis .sub .button button {
-    border: 0;
-    padding: 15px 20px;
-    border-radius: 15px;
-    margin-right: 10px;
-    font-size: 18px;
-}
-.sec3 .work5 .levis .sub .button button:hover {
-    background-color: var(--button-hover);
-}
-.sec3 .work6 .huts {
-    width: 700px;
-    height: 800px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 45px;
-}
-.sec3 .work6 .huts h2 {
-    font-size: 70px;
-}
-.sec3 .work6 .huts p {
-    font-size: 21px;
-    font-weight: 200;
-}
-.sec3 .work6 .huts .sub {
-    display: block;
-}
-.sec3 .work6 .huts .sub h4 {
-    font-size: 50px;
-    font-weight: 400;
-}
-.sec3 .work6 .huts .sub>p {
-    display: block;
-    margin-top: 30px;
-    font-size: 18px;
-    padding-right: 60px;
-}
-.sec3 .work6 .huts .sub>p span {
-    display: block;
-    margin-top: 70px;
-    font-size: 15px;
-}
-.sec3 .work6 .huts .sub .button {
-    display: block;
-    margin-top: 320px;
-}
-.sec3 .work6 .huts .sub .button button {
-    border: 0;
-    padding: 15px 20px;
-    border-radius: 15px;
-    margin-right: 10px;
-    font-size: 18px;
-}
-.sec3 .work6 .huts .sub .button button:hover {
-    background-color: var(--button-hover);
-}*/
-.sec3 .work7 {
+
+.sec3 .work8 {
     position: relative;
 }
-.sec3 .work7 p {
+.sec3 .work8 p {
     position: absolute;
     top: 300px;
     left: 100px;
+    font-size: 32px;
+    left: 120px;
+    top: 340px;
 }
-.sec3 .work7 #computer {
+.sec3 .work8 #computer {
     position: absolute;
     width: 320px;
     height: 320px;
@@ -696,10 +418,10 @@ section {
     transition: .3s;
     cursor: pointer;
 }
-.sec3 .work7 #computer:hover {
+.sec3 .work8 #computer:hover {
     background-size: 200%;
 }
-.sec3 .work7 #computer::before {
+.sec3 .work8 #computer::before {
     content: '';
     position: absolute;
     top: 0;
@@ -712,7 +434,7 @@ section {
     border-radius: 320px;
     z-index: -1;
 }
-.sec3 .work7 #space {
+.sec3 .work8 #space {
     position: absolute;
     width: 320px;
     height: 320px;
@@ -726,10 +448,10 @@ section {
     transition: .3s;
     cursor: pointer;
 }
-.sec3 .work7 #space:hover {
+.sec3 .work8 #space:hover {
     background-size: 210%;
 }
-.sec3 .work7 #space::before {
+.sec3 .work8 #space::before {
     content: '';
     position: absolute;
     top: 0;
@@ -742,7 +464,7 @@ section {
     border-radius: 320px;
     z-index: -1;
 }
-.sec3 .work7 #duck {
+.sec3 .work8 #duck {
     position: absolute;
     width: 320px;
     height: 320px;
@@ -756,10 +478,10 @@ section {
     transition: .3s;
     cursor: pointer;
 }
-.sec3 .work7 #duck:hover {
+.sec3 .work8 #duck:hover {
     background-size: 210%;
 }
-.sec3 .work7 #duck::before {
+.sec3 .work8 #duck::before {
     content: '';
     position: absolute;
     top: 0;
@@ -772,7 +494,7 @@ section {
     border-radius: 320px;
     z-index: -1;
 }
-.sec3 .work7 .up {
+.sec3 .work8 .up {
     width: 320px;
     height: 120px;
     background: rgba(0,0,0,0.7);
@@ -784,7 +506,7 @@ section {
     padding-top: 20px;
     cursor: pointer;
 }
-.sec3 .work7 #modal {
+.sec3 .work8 #modal {
     position: absolute;
     width: 1100px;
     height: 700px;
@@ -795,16 +517,16 @@ section {
     border-radius: 20px;
     display: none;
 }
-.sec3 .work7 #modal span {
+.sec3 .work8 #modal span {
     position: absolute;
     top: 10px;
     right: 10px;
     cursor: pointer;
 }
-.sec3 .work7 #modal div {
+.sec3 .work8 #modal div {
     display: none;
 }
-.sec3 .work7 #modal img {
+.sec3 .work8 #modal img {
     position: absolute;
     top: 50%;
     left: 50%;
