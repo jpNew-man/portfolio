@@ -1,6 +1,6 @@
 /*포폴 스크립트*/
 
-$(window).ready(function() {    
+$('#wrap').imagesLoaded(function() {    
      $('#loading').hide();  
 });
 
