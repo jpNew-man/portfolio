@@ -2,9 +2,8 @@
 
 $('#wrap').imagesLoaded(function() {    
      $('#loading').hide();  
+     $('#wrap').fullpage();
 });
-
-$('#wrap').fullpage();
 
 $('.sec4 #contact #call p:nth-child(1)').click(function(){
     $('.sec4 #contact #call p:nth-child(2)').slideToggle().animate({
